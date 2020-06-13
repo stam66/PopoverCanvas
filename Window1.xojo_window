@@ -53,7 +53,7 @@ Begin Window Window1
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   398
+      Top             =   400
       Transparent     =   True
       Visible         =   True
       Width           =   362
@@ -67,7 +67,7 @@ Begin Window Window1
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
-      LockRight       =   False
+      LockRight       =   True
       LockTop         =   True
       MacButtonStyle  =   "0"
       Scope           =   0
@@ -89,7 +89,7 @@ Begin Window Window1
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
-      LockRight       =   False
+      LockRight       =   True
       LockTop         =   True
       MacButtonStyle  =   "0"
       Scope           =   0
@@ -111,7 +111,7 @@ Begin Window Window1
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
-      LockRight       =   False
+      LockRight       =   True
       LockTop         =   True
       MacButtonStyle  =   "0"
       Scope           =   0
@@ -136,7 +136,7 @@ Begin Window Window1
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
-      LockRight       =   False
+      LockRight       =   True
       LockTop         =   True
       MaximumValue    =   30
       MinimumValue    =   1
@@ -165,9 +165,9 @@ Begin Window Window1
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
-      LockRight       =   False
+      LockRight       =   True
       LockTop         =   True
-      MaximumValue    =   50
+      MaximumValue    =   100
       MinimumValue    =   0
       PageStep        =   1
       Scope           =   0
@@ -372,11 +372,11 @@ Begin Window Window1
       InitialParent   =   ""
       Italic          =   False
       Left            =   500
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
       MacButtonStyle  =   "0"
       Scope           =   2
       TabIndex        =   12
@@ -395,16 +395,14 @@ End
 #tag WindowCode
 	#tag Event
 		Sub Resized()
-		  // Canvas1.Width = Self.Width - 2 * Canvas1.Left
-		  // Canvas1.Height = Self.Height - 2 * Canvas1.top
 		  Canvas1.Invalidate
 		End Sub
 	#tag EndEvent
 
 	#tag Event
 		Sub Resizing()
-		  Canvas1.Width = Self.Width - 2 * Canvas1.Left
-		  Canvas1.Height = Self.Height - 2 * Canvas1.top
+		  Canvas1.Invalidate
+		  
 		End Sub
 	#tag EndEvent
 
