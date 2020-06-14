@@ -13,3 +13,5 @@ Wmbed controls in canvas as needed; can used directly or embeded in a container 
 - side as integer (0 = top, 1 = right, 2 = bottom, 3 = left)
 - ArrowAt as integer (1 = start, 2 = mid, 3 = end) -- part of rect edge arrow should show at
 - ScaleArrowFrom (0 = width, 1 = height) -- use canvas width or height to scale the size of the arrow
+
+![Alt text](popover.jpg?raw=true "PopoverCanvas example")
