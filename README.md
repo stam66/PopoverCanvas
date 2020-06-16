@@ -3,7 +3,7 @@ XOJO canvas class to simulate a popover
 Draws a rect/roundrect that with a triange/arrow at requested size (top/right/bottom/left) at either start/mid/end of selected side.
 
 ##### Usage 
-Wmbed controls in canvas as needed; can used directly or embeded in a container control
+Embed controls in canvas as needed; can used directly or embeded in a container control
 
 ##### Properties exposed in IDE:
 - lineColour as color //default is black
